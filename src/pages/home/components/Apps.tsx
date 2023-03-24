@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
-import CheckroomIcon from '@mui/icons-material/Checkroom';
 import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
+import SettingsIcon from '@mui/icons-material/Settings';
 import './styles.css';
 import { useNavigate } from 'react-router-dom';
 import { paths } from '../../../common/routes/paths';
@@ -21,7 +21,7 @@ const apps: { color: string, icon: any, path: string }[] = [
     },
     {
         color: '#447b0c',
-        icon: <CheckroomIcon sx={{ fontSize: FONT_SIZE }} className='Apps__icon'/>,
+        icon: <SettingsIcon sx={{ fontSize: FONT_SIZE }} className='Apps__icon'/>,
         path: ''
     }
 ];
