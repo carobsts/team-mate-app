@@ -7,6 +7,26 @@ import ImgHeader from './components/ImgHeader';
 import Championship from './components/Championship';
 import UpcomingFootballMatches from './components/UpcomingFootballMatches';
 import Utils from './components/Utils';
+import { sectionsTitles } from '../../utils/sectionsTitles.home.enum';
+
+const sections: { sectionTitle: string, Component: any }[] = [
+    {
+        sectionTitle: sectionsTitles.YOUR_ACCESSES,
+        Component: <Apps/>
+    },
+    {
+        sectionTitle: sectionsTitles.CURRENT_CHAMPIONSHIP,
+        Component: <Championship/>
+    },
+    {
+        sectionTitle: sectionsTitles.NEXT_MATCHES,
+        Component: <UpcomingFootballMatches/> 
+    },
+    {
+        sectionTitle: sectionsTitles.UTILS,
+        Component: <Utils/>
+    }
+];
 
 interface HomeProps {}; 
 
@@ -15,22 +35,12 @@ const Home: FC<HomeProps> = () => {
     return (
         <section>
             <ImgHeader/>
-            <div className='Home__sections--wrapper'>
-                <h1> Tus accesos </h1>
-                <Apps/>
-            </div>
-            <div className='Home__sections--wrapper'>
-                <h1> Torneo actual </h1>
-                <Championship/>
-            </div>
-            <div className='Home__sections--wrapper'>
-                <h1> Próximos partidos </h1>
-                <UpcomingFootballMatches/>
-            </div>
-            <div className='Home__sections--wrapper'>
-                <h1> Responsables de utilería </h1>
-                <Utils/>
-            </div>
+            { sections.map(section => 
+                <div key={section.sectionTitle} className='Home__sections--wrapper'>
+                    <h1> { section.sectionTitle } </h1>
+                    { section.Component }
+                </div>
+            )}
         </section>
     )
 };
