@@ -5,5 +5,8 @@ export const paths = {
     },
     settings: {
         root: '/settings'
+    },
+    login: {
+        root: '/login'
     }
 };
