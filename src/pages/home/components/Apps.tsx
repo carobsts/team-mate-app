@@ -17,7 +17,7 @@ const apps: { color: string, icon: any, path: string }[] = [
     {
         color: '#478610',
         icon: <EmojiEventsIcon sx={{ fontSize: FONT_SIZE }} className='Apps__icon'/>,
-        path: ''
+        path: paths.championship.root
     },
     {
         color: '#447b0c',

@@ -2,9 +2,16 @@
     padding: 10px 0 20px 0;
 }
 
-.DatesComponent__container--wrapper > div:nth-child(1) > h1 {
+.DatesComponent__container--wrapper > div:nth-child(1) > h1,
+.ResultsComponent__container--wrapper > div:nth-child(1) > h1,
+.ResultsComponent__container--wrapper > div:nth-child(2) > h1 {
     font-size: 18px;
     margin: 0 0 10px 0
+}
+
+.ResultsComponent__container--wrapper > div:nth-child(1) > h1,
+.ResultsComponent__container--wrapper > div:nth-child(2) > h1 {
+    margin: 20px 0 10px 0;
 }
 
 .Dates__container--firstItem > div:nth-child(1) > h2 {

@@ -2,6 +2,8 @@ import { FC } from 'react';
 import './Championship.css';
 import Tabs from '../../common/tabs/Tabs';
 import Dates from './components/Dates';
+import Results from './components/Results';
+import StillWorking from '../../common/still-working/StillWorking';
 
 const data1 = [
     {
@@ -34,11 +36,11 @@ const ChampionshipPage: FC<ChampionshipProps> = (
         },
         {
             name: 'Resultados',
-            Component: <div> Resultados </div>
+            Component: <Results/>
         },
         {
             name: 'Histórico',
-            Component: <div> Histórico </div>
+            Component: <StillWorking/>
         }
     ];
 
