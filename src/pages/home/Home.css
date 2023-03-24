@@ -1,0 +1,12 @@
+.Home__sections--wrapper {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0 0 0;
+}
+
+.Home__sections--wrapper > h1 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
