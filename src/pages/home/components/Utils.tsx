@@ -1,20 +1,32 @@
 import { FC } from 'react';
 import './styles.css';
 
+const CURRENTLY: string = 'Actualmente';
+const SOON: string = 'Próximamente';
+
+const utilsData: { title: string, user: string }[] = [
+    {
+        title: CURRENTLY,
+        user: 'Caro B.'
+    },
+    {
+        title: SOON,
+        user: 'Sofi G.'
+    }
+];
+
 interface UtilsProps {
 };
 
 const Utils: FC<UtilsProps> = (props: UtilsProps) => {
     return (
         <div className='Utils__container--wrapper'>
-            <div>
-                <h2>Actualmente</h2>
-                <p> Caro B. </p>
-            </div>
-            <div>
-                <h2>Proximamente</h2>
-                <p> Sofi G. </p>
-            </div>
+            { utilsData.map(el =>
+                <div>
+                    <h2> { el.title } </h2>
+                    <p> { el.user } </p>
+                </div>
+            )}
         </div>
     )
 };
