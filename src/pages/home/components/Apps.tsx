@@ -4,28 +4,30 @@ import CheckroomIcon from '@mui/icons-material/Checkroom';
 import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
 import './styles.css';
 
+const FONT_SIZE: number = 50;
+
+const apps: { color: string, icon: any }[] = [
+    {
+        color: '#377109',
+        icon: <SportsSoccerIcon sx={{ fontSize: FONT_SIZE }} className='Apps__icon'/>
+    },
+    {
+        color: '#478610',
+        icon: <EmojiEventsIcon sx={{ fontSize: FONT_SIZE }} className='Apps__icon'/>
+    },
+    {
+        color: '#447b0c',
+        icon: <CheckroomIcon sx={{ fontSize: FONT_SIZE }} className='Apps__icon'/>
+    }
+];
+
 interface AppsProps {};
 
 const Apps: FC<AppsProps> = () => {
-
-    const apps = [
-        {
-            color: '#377109',
-            icon: <SportsSoccerIcon sx={{ fontSize: 50 }} className='Apps__icon'/>
-        },
-        {
-            color: '#478610',
-            icon: <EmojiEventsIcon sx={{ fontSize: 50 }} className='Apps__icon'/>
-        },
-        {
-            color: '#447b0c',
-            icon: <CheckroomIcon sx={{ fontSize: 50 }} className='Apps__icon'/>
-        }
-    ];
     return (
         <section className='Apps__container--wrapper'>
             { apps.map(a => 
-                <div style={{  backgroundColor: a.color }}>
+                <div key={a.color} style={{  backgroundColor: a.color }}>
                     { a.icon }
                 </div>
             )}
