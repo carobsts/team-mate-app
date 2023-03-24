@@ -7,5 +7,8 @@ export const browserTitles = {
     },
     login: {
         root: 'Inicio de Sesión'
+    },
+    training: {
+        root: 'Entrenamientos'
     }
 };

@@ -8,5 +8,8 @@ export const paths = {
     },
     login: {
         root: '/login'
+    },
+    training: {
+        root: '/training'
     }
 };

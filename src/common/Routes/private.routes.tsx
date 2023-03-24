@@ -1,4 +1,5 @@
 import Home from "../../pages/home/Home";
+import Training from "../../pages/training/Training";
 import { paths } from "./paths";
 
 export const privateRoutes: any[] = [
@@ -9,5 +10,9 @@ export const privateRoutes: any[] = [
     {
         path: paths.settings.root,
         Component: <div> Configuraciones </div>
+    },
+    {
+        path: paths.training.root,
+        Component: <Training/>
     }
 ];
