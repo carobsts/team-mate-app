@@ -1,13 +1,16 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import './App.css';
-import Router from './common/Routes/Router';
+import Layout from './common/layout/Layout';
+import Router from './common/routes/Router';
 
 interface AppProps {};
 
 const App: FC<AppProps> = () => {
   return (
     <div className="App">
-      <Router/>
+      <Layout>
+        <Router/>
+      </Layout>
     </div>
   );
 }
