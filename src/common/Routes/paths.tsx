@@ -11,5 +11,8 @@ export const paths = {
     },
     training: {
         root: '/training'
+    },
+    championship: {
+        root: '/championship'
     }
 };

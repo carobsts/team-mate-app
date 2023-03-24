@@ -10,5 +10,8 @@ export const browserTitles = {
     },
     training: {
         root: 'Entrenamientos'
+    },
+    championship: {
+        root: 'Campeonatos'
     }
 };

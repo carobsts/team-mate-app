@@ -1,0 +1,81 @@
+.DatesComponent__container--wrapper {
+    padding: 10px 0 20px 0;
+}
+
+.DatesComponent__container--wrapper > div:nth-child(1) > h1 {
+    font-size: 18px;
+    margin: 0 0 10px 0
+}
+
+.Dates__container--firstItem > div:nth-child(1) > h2 {
+    font-size: 18px;
+    color: #478610;
+    margin: 0 0 10px 0;
+}
+
+.Dates__container--firstItem > div:nth-child(1) > p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.Dates__container--firstItem > div:nth-child(1) > p:nth-child(3) {
+    margin-top: 20px;
+    font-size: 14px;
+    color: gray
+}
+
+.Dates__container--firstItem > div:nth-child(2) {
+    width: 100%;
+    margin: 20px 0 0 0
+}
+
+.Dates__button--confirm {
+    background-color: #478610 !important;
+    margin-right: 10px !important;
+}
+
+.Dates__button--decline {
+    color: #478610 !important;
+    border: 1px solid #478610 !important;
+}
+
+.Dates__container--item {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Dates__container--item > div:nth-child(1) {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Dates__container--item > div:nth-child(2) {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.DatesComponent__container--wrapper > div:nth-child(2) > h1 {
+    font-size: 18px;
+    margin: 20px 0 10px 0;
+}
+
+.Dates__container--item > div:nth-child(2) > p, 
+.Dates__container--item > div:nth-child(2) > h2 {
+    margin: 0
+}
+
+.Dates__container--item > div:nth-child(2) > h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.Dates__container--item > div:nth-child(2) > p {
+    font-size: 14px;
+}

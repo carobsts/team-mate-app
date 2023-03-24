@@ -29,7 +29,7 @@ const Championship: FC<ChampionshipProps> = (props: ChampionshipProps) => {
     };
 
     return (
-        <div className='Championship__container--wrapper'>
+        <div className='Championship__container--wrapper1'>
             <CardItem>
                 <div className='Championship__container--item'>
                     { renderChampionship() }
