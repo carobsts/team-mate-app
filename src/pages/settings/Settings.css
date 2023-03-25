@@ -1,0 +1,35 @@
+.Settings__container--wrapper {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.Settings__container--wrapper > h1 {
+    font-size: 20px;
+    color: #478610;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray
+}
+
+.Settings__container--wrapper > div {
+    padding: 20px 0;
+}
+
+.Settings__container--wrapper > div > div {
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 20px;
+    box-sizing: border-box;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.Settings__container--wrapper > div > div > p {
+    font-size: 16px;
+}

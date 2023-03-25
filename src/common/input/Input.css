@@ -1,0 +1,25 @@
+.InputComponent__container--wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px
+}
+
+.InputComponent__container--wrapper > label {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 5px
+}
+
+.InputComponent__container--wrapper > input {
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #478610;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+    outline: none;
+}

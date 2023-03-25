@@ -1,0 +1,44 @@
+.PlayerItemComponent__container--wrapper {
+    width: 100%;
+}
+
+.PlayerItemComponent__container--wrapper > p:nth-child(1) {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.PlayerItemComponent__container--wrapper > p:nth-child(2),
+.PlayerItemComponent__container--wrapper > p:nth-child(3) {
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px 0 0 0;
+}
+
+.CreatePlayerComponent__container--wrapper {
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.CreatePlayerComponent__container--wrapper > h1 {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+}
+
+.CreatePlayerComponent__container--wrapper > div:nth-child(5) {
+    margin: 20px 0;
+}
+
+.CreatePlayerComponent__button--confirm {
+    background-color: #478610 !important;
+    margin-right: 10px !important;
+}
+
+.CreatePlayerComponent__button--decline {
+    color: #478610 !important;
+    border: 1px solid #478610 !important;
+}

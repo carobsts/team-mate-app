@@ -1,0 +1,16 @@
+.PlayersComponent__container--wrapper {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    position: relative;
+}
+
+.PlayersComponent__container--wrapper > section:nth-child(3) > p {
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.PlayersComponent__container--itemsContainer {
+    height: 100%;
+    box-sizing: border-box;
+}
