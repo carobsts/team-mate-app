@@ -149,3 +149,27 @@
     text-align: center;
     margin: 5px 0 10px 0;
 }
+
+.UpcomingFootballMatches__container--chip {
+    width: fit-content;
+    padding: 5px 0;
+    height: fit-content;
+    margin-top: 10px
+}
+
+.UpcomingFootballMatches__container--chip > p {
+    margin: 0
+}
+
+.UpcomingFootballMatches__container--chip--inactive,
+.UpcomingFootballMatches__container--chip--active {
+    background-color: gray;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.UpcomingFootballMatches__container--chip--active {
+    background-color: #478610;
+}

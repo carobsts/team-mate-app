@@ -1,5 +1,6 @@
 import Championship from "../../pages/championship/Championship";
 import Home from "../../pages/home/Home";
+import ChampionshipUp from "../../pages/settings/components/ChampionshipUp";
 import Players from "../../pages/settings/components/Players";
 import Settings from "../../pages/settings/Settings";
 import Training from "../../pages/training/Training";
@@ -25,5 +26,9 @@ export const privateRoutes: any[] = [
     { 
         path: paths.settings.football_player_creation,
         Component: <Players/>
+    },
+    {
+        path: paths.settings.championship_creation,
+        Component: <ChampionshipUp/>
     }
 ];

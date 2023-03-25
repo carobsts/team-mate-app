@@ -3,15 +3,19 @@ import CardItem from '../../../common/cardItem/CardItem';
 import './styles.css';
 
 interface ChampionshipProps {
+    children?: any
 };
 
 const Championship: FC<ChampionshipProps> = (props: ChampionshipProps) => {
+
+    const { children } = props;
 
     function renderChampionship() {
         return (
             <div>
                 <p> Torneo Imperial </p>
                 <p> Au Córdoba - Juárez Celman, Córdoba </p>
+                { children }
             </div>
         )
     };

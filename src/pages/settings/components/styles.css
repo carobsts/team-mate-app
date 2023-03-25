@@ -1,4 +1,5 @@
-.PlayersComponent__container--wrapper {
+.PlayersComponent__container--wrapper,
+.ChampionshipUpComponent__container--wrapper {
     width: 90%;
     margin: auto;
     padding: 20px 0;
