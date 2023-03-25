@@ -1,0 +1,35 @@
+.ResultsTableComponent__container--wrapper {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px 0;
+    box-shadow: -1px 5px 21px -4px rgba(0,0,0,0.13);
+    -webkit-box-shadow: -1px 5px 21px -4px rgba(0,0,0,0.13);
+    -moz-box-shadow: -1px 5px 21px -4px rgba(0,0,0,0.13);
+}
+
+.ResultsTableComponent__container--wrapper > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid lightgray;
+}
+
+.ResultsTableComponent__container--wrapper > div:last-child {
+    border-right: none;
+}
+
+.ResultsTableComponent__container--wrapper > div > b {
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 5px
+}
+
+.ResultsTableComponent__container--wrapper > div > p {
+    margin: 0;
+    font-size: 18px;
+}

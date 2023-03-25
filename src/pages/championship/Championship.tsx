@@ -31,11 +31,11 @@ const ChampionshipPage: FC<ChampionshipProps> = (
 
     const data = [
         {
-            name: 'Fechas',
+            name: 'Asistencia',
             Component: <Dates history={data1}/>
         },
         {
-            name: 'Resultados',
+            name: 'Torneo',
             Component: <Results/>
         },
         {

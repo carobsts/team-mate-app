@@ -4,7 +4,8 @@
 
 .DatesComponent__container--wrapper > div:nth-child(1) > h1,
 .ResultsComponent__container--wrapper > div:nth-child(1) > h1,
-.ResultsComponent__container--wrapper > div:nth-child(2) > h1 {
+.ResultsComponent__container--wrapper > div:nth-child(3) > h1,
+.ResultsComponent__container--resultsTable > h1 {
     font-size: 18px;
     margin: 0 0 10px 0
 }
@@ -85,4 +86,25 @@
 
 .Dates__container--item > div:nth-child(2) > p {
     font-size: 14px;
+}
+
+.ResultsComponent__container--date {
+    font-size: 12px;
+    color: gray
+}
+
+.ResultsComponent__container--footballMatches > h3 {
+    font-size: 16px;
+    color: #478610
+}
+
+.ResultsComponent__container--button {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0
+}
+
+.ResultsComponent__button--decline {
+    color: #478610 !important;
+    border: none !important;
 }
