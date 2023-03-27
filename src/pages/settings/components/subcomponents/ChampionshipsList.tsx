@@ -1,3 +1,4 @@
+import { Edit } from '@mui/icons-material';
 import { Button } from '@mui/material';
 import { FC, useState } from 'react'; 
 import { getStyle } from '../../../../utils/getStyleForMargin';
@@ -11,7 +12,7 @@ const ChampionshipList: FC<ChampionshipListProps> = (
     props: ChampionshipListProps
 ) => {
 
-    const [ show, setShow ] = useState<boolean>(false); 
+    const [ show, setShow ] = useState<boolean>(false);
 
     const dates = [
         {
@@ -29,11 +30,14 @@ const ChampionshipList: FC<ChampionshipListProps> = (
                 <p className='ChampionshipListComponent__container--date'>
                     01/03/2022 - 30/03/2022
                 </p>
+                <div className='ChampionshipListComponent__container--editIcon'>
+                    <Edit/>
+                </div>
             </Championship>
             { show &&
                 <div className='ChampionshipListComponent__container--footballMatches'>
                     <h3> Partidos del campeonato </h3>
-                    <FootballMatches/>
+                    <FootballMatches editMode={true}/>
                 </div>
             }
             <div className='ChampionshipListComponent__container--button'>

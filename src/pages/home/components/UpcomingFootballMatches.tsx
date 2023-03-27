@@ -1,3 +1,4 @@
+import { Edit } from '@mui/icons-material';
 import { FC } from 'react';
 import CardItem from '../../../common/cardItem/CardItem';
 import './styles.css';
@@ -21,11 +22,14 @@ const matches: { name: string, date: string, end: boolean }[] = [
 ];
 
 interface UpcomingFootballMatchesProps {
+    editMode?: boolean
 };
 
 const UpcomingFootballMatches: FC<UpcomingFootballMatchesProps> = (
     props: UpcomingFootballMatchesProps
 ) => {
+
+    const { editMode } = props;
     
     function getStyle(idx: number, elements: any[]) {
         return idx !== (elements.length-1) 
@@ -59,6 +63,11 @@ const UpcomingFootballMatches: FC<UpcomingFootballMatchesProps> = (
                             <p> { match.end ? renderEndChip() : renderNoEndChip() } </p>
                         </div>
                     </div>
+                    { editMode && 
+                        <div className='UpcomingFootballMatches__container--editIcon'>
+                            <Edit/>
+                        </div>
+                    }
                 </CardItem>
             )}
         </div>

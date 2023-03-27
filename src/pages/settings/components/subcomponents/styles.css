@@ -70,3 +70,17 @@
     font-size: 16px;
     color: #478610
 }
+
+.ChampionshipListComponent__container--editIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: lightgray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

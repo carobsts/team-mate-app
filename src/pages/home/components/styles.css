@@ -173,3 +173,17 @@
 .UpcomingFootballMatches__container--chip--active {
     background-color: #478610;
 }
+
+.UpcomingFootballMatches__container--editIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: lightgray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
