@@ -1,5 +1,7 @@
 .PlayersComponent__container--wrapper,
-.ChampionshipUpComponent__container--wrapper {
+.ChampionshipUpComponent__container--wrapper,
+.TrainingUpComponent__container--wrapper,
+.DatesUpComponent__container--wrapper {
     width: 90%;
     margin: auto;
     padding: 20px 0;

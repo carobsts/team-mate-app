@@ -25,7 +25,7 @@ const Settings: FC<SettingsProps> = () => {
             color: '#447b0c'
         },
         {
-            title: 'Alta de fechas',
+            title: 'Alta de partidos',
             path: paths.settings.dates_creation,
             color: '#377109'
         },

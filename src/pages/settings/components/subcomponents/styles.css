@@ -71,7 +71,8 @@
     color: #478610
 }
 
-.ChampionshipListComponent__container--editIcon {
+.ChampionshipListComponent__container--editIcon,
+.TrainingUpItemComponent__container--editIcon {
     position: absolute;
     top: 0;
     right: 0;
@@ -83,4 +84,76 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.TrainingUpList__container--wrapper {
+    width: 100%;
+}
+
+.TrainingUpList__trainingToBeDone--container,
+.TrainingUpList__trainingDoned--container {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.TrainingUpList__trainingToBeDone--container > h1, 
+.TrainingUpList__trainingDoned--container > h1 {
+    margin: 0;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.TrainingUpItemComponent__container--info {
+    width: 100%;
+}
+
+.TrainingUpItemComponent__container--info > h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.TrainingUpItemComponent__container--info > p {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+.TrainingUpItemComponent__container--info > div {
+    width: fit-content;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.TrainingUpItemComponent__container--info > div > p {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.CreateTrainingComponent__container--wrapper {
+    width: 100%;
+}
+
+.CreateTrainingComponent__container--wrapper > h1 {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.CreateTrainingComponent__trainingType--radioButtons,
+.CreateTrainingComponent__statusType--radioButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 20px 0;
+}
+
+.CreateTrainingComponent__button--confirm {
+    background-color: #478610 !important;
+    margin-right: 10px !important;
+}
+
+.CreateTrainingComponent__button--decline {
+    color: #478610 !important;
+    border: 1px solid #478610 !important;
 }

@@ -1,23 +1,27 @@
 import { Edit } from '@mui/icons-material';
 import { FC } from 'react';
 import CardItem from '../../../common/cardItem/CardItem';
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import './styles.css';
 
-const matches: { name: string, date: string, end: boolean }[] = [
+const matches: { name: string, date: string, end: boolean, site?: string }[] = [
     {
         name: 'Taladro Fem vs. A1',
         date: '01/01/2023 | 20:00',
-        end: false
+        end: false,
+        site: 'Torneo Imperial'
     },
     {
         name: 'Taladro Fem vs. A2',
         date: '02/02/2023 | 21:00',
-        end: true
+        end: true,
+        site: 'Torneo Imperial'
     },
     {
         name: 'Taladro Fem vs. A3',
         date: '03/03/2023 | 17:00',
-        end: true
+        end: true,
+        site: 'Torneo Imperial'
     }
 ];
 
@@ -59,6 +63,7 @@ const UpcomingFootballMatches: FC<UpcomingFootballMatchesProps> = (
                     <div className='UpcomingFootballMatches__container--item'>
                         <h2> { match.name } </h2>
                         <p> { match.date } </p>
+                        <label> <EmojiEventsIcon style={{ marginRight: 5 }}/> { match.site } </label>
                         <div className='UpcomingFootballMatches__container--chip'>
                             <p> { match.end ? renderEndChip() : renderNoEndChip() } </p>
                         </div>

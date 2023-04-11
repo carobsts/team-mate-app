@@ -187,3 +187,12 @@
     justify-content: center;
     align-items: center;
 }
+
+.UpcomingFootballMatches__container--item > label {
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+    font-size: 14px;
+    justify-content: flex-start;
+    align-items: center;
+}
